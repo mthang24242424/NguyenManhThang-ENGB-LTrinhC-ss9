@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Hàm ki?m tra s? nguyên t?
+// ktra so nguyen to  
 int isPrime(int n) {
     if (n < 2) return 0;
     for (int i = 2; i <= sqrt(n); i++) {
@@ -13,8 +13,8 @@ int isPrime(int n) {
 
 int main() {
     int choose, a = 0;
-    int number[100]; // Gi? ð?nh m?ng t?i ða có 100 ph?n t?
-    int check = 0;   // Ki?m tra xem m?ng ð? nh?p chýa: 0 là chýa, 1 là r?i
+    int number[100]; 
+    int check = 0;   // kiem tra xem mang dc nhap chua 
     int value, index, count = 0, total = 0;
 
     do {
@@ -135,8 +135,8 @@ int main() {
                     for (int i = a; i >= index; i--) {
                         number[i] = number[i - 1];
                     }
-                    number[index - 1] = value; // Gán giá tr? m?i
-                    a++; // Tãng kích thý?c m?ng
+                    number[index - 1] = value; // gan gia tri ms 
+                    a++; // tang kich thuoc mang len 1 
                 }
                 break;
 
